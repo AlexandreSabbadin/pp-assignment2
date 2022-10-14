@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include <mpi.h>
 
 const double G  = 6.67259e-7;  /* Gravitational constant (should be e-10 but modified to get more action */
 const double dt = 1.0;         /* Length of timestep */
