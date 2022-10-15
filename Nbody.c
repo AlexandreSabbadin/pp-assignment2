@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include <mpi.h>
 
 const double G  = 6.67259e-7;  /* Gravitational constant (should be e-10 but modified to get more action */
 const double dt = 1.0;         /* Length of timestep */
@@ -57,7 +58,7 @@ void ComputeForce(int N, double *X, double *Y, double *mass, double *Fx, double 
 
 int main(int argc, char **argv) {
   
-  const int N=100;                   // Number of bodies 
+  const int N=400;                   // Number of bodies 
   const int timesteps = 1000;        // Number of timesteps
   const double size = 100.0;           // Initial positions are in the range [0,100]
 
